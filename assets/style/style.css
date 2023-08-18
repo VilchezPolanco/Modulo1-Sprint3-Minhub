@@ -1,0 +1,576 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+/*HEADER*/
+header{
+    height: 5rem;
+    width: 100%;
+    background-color: aqua;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 1.5rem 0.3rem;
+}
+header a:hover{
+    background-color: rgb(14, 218, 218);
+}
+header div img{
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+/*MAIN INDEX*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 3rem 0 1rem;
+    font-size: 35px;
+}
+main div.mainImage{
+    width: 80%;
+    margin-top: 1rem;
+}
+main div.mainImage img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+main div.mainsectionDos{
+    width: 78%;
+    height: 27rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+main div.mainsectionDos p{
+    font-size: 25px;
+    width: 50%;
+}
+main div.mainsectionDos img{
+    width: 30vw;
+    height: 85%;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: 2rem;
+}
+
+/* MAIN ABOUT US*/
+h1.titulo{
+    text-align: center;
+    margin: 3rem 0 0.5rem;
+    font-size: 35px;
+}
+h3{
+    margin: 0.5rem 0 1rem;
+    font-size: 20px;
+    text-decoration: underline;
+}
+main div.mainAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60rem;
+}
+
+main div.mainAbout div img{
+    width: 400px;
+    margin: 0 2rem;
+}
+main div.mainAbout div p{
+    font-size: 20px;
+    width: 30rem;
+}
+main div.mainAbout div.cajaUno, div.cajaDos, div.cajaTres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*MAIN CONTAC*/
+main div.mainContact{
+    width: 65%;
+    text-align: center;
+    margin: 1rem auto 3rem;
+    font-size: 25px;
+}
+main div.mainContact img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+main div.mainContactA{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding-bottom: 6rem;
+}
+main div.mainContactA a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*MAIN BENEFICIOS Y CONSEJOS*/
+div.mainBeneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+div.imagenesTexto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25rem;
+}
+div.imagenesTexto img{
+    width: 20rem;
+    height: 23rem;
+}
+div.listas{
+    font-size: 19px;
+    width: 20rem;
+    height: 25rem;
+}
+ol>li{
+    height: 17.5rem;
+    padding-top: 6rem;
+}
+ul>li{
+    margin: 0.3rem 0 0 2rem;
+}
+ul{
+    list-style-type: disc;
+}
+
+/*MAIN INFORMACION*/
+main.table{
+    margin: 3rem 0;
+}
+table, tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    width: 38rem;
+    height: 8rem;
+}
+/*MAIN RAFFLE*/
+.raffleCaja{
+    display: flex;
+}
+.imgRaffle{
+    padding: 3rem;
+}
+h4{
+    margin-bottom: 0.5rem;
+}
+iframe{
+    width: 30rem;
+    height: 25rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(148, 216, 216);
+}
+#message{
+    margin: 0.5rem;
+}
+form label{
+    margin-bottom: 0.2rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+form input{
+    margin-bottom: 0.5rem;
+}
+form select{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.enviar{
+    margin: 0.3rem 0;
+}
+/*footer*/
+footer{
+    height: 4rem;
+    background-color: rgb(25, 177, 177);
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 30rem;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header a{
+        font-size: 25px;
+        padding: 1rem;
+    }
+    header div img{
+        width: 7rem;
+        margin-right: 0;
+    }
+
+    /*MAIN INDEX*/
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main div.mainsectionDos{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 78%;
+        height: 45rem;
+    }
+    main div.mainsectionDos p{
+        font-size: 30px;
+        width: 70%;
+        padding: 2rem 0 1rem;
+    }
+    main div.mainsectionDos img{
+        width: 45vw;
+        height: 70%;
+    }
+
+    /* MAIN ABOUT US*/
+    main div.mainAbout{
+        height: 65rem;
+        margin-bottom: 1rem;
+    }
+    main div.mainAbout div p{
+        width: 25rem;
+        text-align: center;
+    }
+    main div.mainAbout div.cajaUno, div.cajaDos, div.cajaTres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem;
+    }
+
+    /*MAIN CONTAC*/
+    main div.mainContact{
+        margin: 1rem auto 2rem;
+    }
+    main div.mainContactA{
+        display: flex;
+        flex-direction: column;
+    }
+
+   div.mainBeneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    }
+    div.imagenesTexto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 25rem;
+    }
+    div.imagenesTexto img{
+        width: 20rem;
+        height: 23rem;
+    }
+    div.listas{
+        font-size: 19px;
+        width: 20rem;
+        height: 25rem;
+    }
+    ol>li{
+        height: 17.5rem;
+        padding-top: 6rem;
+    }
+    ul>li{
+        margin: 0.3rem 0 0 2rem;
+    }
+    ul{
+        list-style-type: disc;
+    }
+/*MAIN BENEFICIOS Y CONSEJOS*/
+    div.mainBeneficios{
+        align-items: center;
+        width: 50%;
+    }
+    div.imagenesTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 38rem;
+    }
+    div.listas{
+        width: 15rem;
+        height: 12rem;
+    }
+    ol>li{
+        height: 17.5rem;
+        padding-top: 2rem;
+    }
+
+/*MAIN RAFFLE*/
+    .raffleCaja{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h4{
+        margin-bottom: 0.5rem;
+        text-align: center
+    }
+    iframe{
+        width: 30rem;
+        height: 25rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(148, 216, 216);
+    }
+    form label{
+        margin-bottom: 0.2rem;
+        font-size: 18px;
+        text-align: center;
+    }
+    form input{
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+    }
+    form select{
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .enviar{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 22rem;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header a{
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    header div img{
+        width: 7rem;
+        margin-right: 0;
+    }
+
+    /*MAIN INDEX*/
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main div.mainsectionDos{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 78%;
+        height: 35rem;
+    }
+    main div.mainsectionDos p{
+        font-size: 25px;
+        width: 78%;
+        padding: 2rem 0 1rem;
+    }
+    main div.mainsectionDos img{
+        width: 45vw;
+        height: 60%;
+    }
+
+    /* MAIN ABOUT US*/
+    main div.mainAbout{
+        height: 65rem;
+        margin-bottom: 1rem;
+    }
+    main div.mainAbout div p{
+        width: 25rem;
+        text-align: center;
+    }
+    main div.mainAbout div.cajaUno, div.cajaDos, div.cajaTres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem;
+    }
+
+    /*MAIN CONTAC*/
+    main div.mainContact{
+        margin: 1rem auto 2rem;
+    }
+    main div.mainContactA{
+        display: flex;
+        flex-direction: column;
+    }
+
+   div.mainBeneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    }
+    div.imagenesTexto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 25rem;
+    }
+    div.imagenesTexto img{
+        width: 20rem;
+        height: 23rem;
+    }
+    div.listas{
+        font-size: 19px;
+        width: 20rem;
+        height: 25rem;
+    }
+    ol>li{
+        height: 17.5rem;
+        padding-top: 6rem;
+    }
+    ul>li{
+        margin: 0.3rem 0 0 2rem;
+    }
+    ul{
+        list-style-type: disc;
+    }
+/*MAIN BENEFICIOS Y CONSEJOS*/
+    div.mainBeneficios{
+        align-items: center;
+        width: 50%;
+    }
+    div.imagenesTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 38rem;
+    }
+    div.listas{
+        width: 15rem;
+        height: 12rem;
+    }
+    ol>li{
+        height: 17.5rem;
+        padding-top: 2rem;
+    }
+
+    /*MAIN INFORMACION*/
+    main.table{
+        margin: 3rem 0;
+    }
+    table, tr, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        font-size: 18px;
+        text-align: center;
+        width: 20rem;
+        height: 5rem;
+    }
+
+/*MAIN RAFFLE*/
+    .raffleCaja{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    h4{
+        margin-bottom: 0.5rem;
+        text-align: center
+    }
+    .imgRaffle{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        width: 30rem;
+        height: 25rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(148, 216, 216);
+    }
+    form label{
+        margin-bottom: 0.2rem;
+        font-size: 18px;
+        text-align: center;
+    }
+    form input{
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+    }
+    form select{
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .enviar{
+        text-align: center;
+    }
+}
